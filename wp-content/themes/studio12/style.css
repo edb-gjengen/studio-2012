@@ -110,6 +110,12 @@ hr { width: 60%; }
 .sidebar li { margin-top: 1em; }
 .sidebar li a { text-decoration: underline; }
 
+.sidebar h2 {
+	padding-top: 0.5em;
+	text-align: center;
+    
+}
+
 .widget .artist {
 	display: block;
     padding: 1em 1em 1em 1em;
@@ -140,6 +146,7 @@ hr { width: 60%; }
 }
 
 .post, .event {
+	background: #FFF;
     width: 40%;
     float: center;
     margin: 1em 1em 1em 28.5%;
@@ -205,5 +212,8 @@ input#saveForm {
 	width: 4em;
 	background-color: #e4156f;
 	font-family: 'Lobster', cursive;
-	
+}
+
+#frivilligknapp {
+	text-align: center;
 }
