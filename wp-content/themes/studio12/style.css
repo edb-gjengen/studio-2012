@@ -1,0 +1,202 @@
+/*   
+Theme Name: studio12
+Theme URI: http://studioweb.no
+Description: Studio Theme for wordpress
+Author: Sjur Hernes
+Author URI: edb.studentersamfundet.no
+Version: 0.1
+*/
+
+.transparent {
+    filter:alpha(opacity=95); 
+    -moz-opacity: 0.95; 
+    opacity: 0.95; 
+}
+
+html { heigth: 100%; }
+
+body {
+    font-family: sans-serif;
+    margin: 0em !important;
+    position: top;
+}
+
+#header {
+    height: 274px;
+    width: 1200px;
+}
+
+#banner {
+}
+
+#logo {
+    position: absolute;
+    margin-left: 460px;
+    top: 40px;
+    height: 285px;
+
+}
+
+#nav {
+    margin-top: 0;
+    background-color: #e4156f;
+    height: 40px;
+}
+
+#menu-header-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    float: left;
+    margin-left: 1em;
+    list-style: none;
+    width: 120px;
+    text-align: center;
+}
+.menu-item a {
+    line-height: 40px;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+}
+
+article {
+    background-color: #FFF;
+}
+
+/* Text and links */
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a :hover { text-decoration: underline; } 
+
+h1, h2, h3 { font-family: 'Lobster', cursive; }
+
+hr { width: 60%; }
+
+
+/* Site */
+#page-wrap {
+    margin: 28px auto;
+    width: 1200px;
+}
+
+.sidebar {
+    background-color: #FFF;
+    width: 23%;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 0em 1em 0%;
+}
+
+#sidebar-left{ 
+    float:left;
+}
+#sidebar-right{ 
+    float:right;
+}
+
+.sidebar ul{
+    list-style:none;
+    margin-left:-1.5em;
+} 
+.sidebar li { margin-top: 1em; }
+.sidebar li a { text-decoration: underline; }
+
+.widget .artist {
+    text-align: center;
+    line-height: 1px;
+}
+.widget .artist a {
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+}
+.widget .artist :hover {
+    text-decoration: underline;
+}
+.widget .liten {
+    font-size: 20px;
+}
+.widget .normalliten{
+    font-size: 20px;
+}
+.widget .normalstor {
+    font-size: 25px;
+}
+.widget .stor {
+    font-size: 30px;
+}
+.widget .mega {
+    font-size: 35px;
+}
+
+.post, .event {
+    width: 40%;
+    float: center;
+    margin: 1em 1em 1em 28.5%;
+    padding: 1em 1em 1em 1em;
+}
+
+.post h2 {
+    text-align: center;
+}
+
+
+.postinfo {
+    text-align: center;
+    text-decoration: italic;
+    font-size: 0.75em;
+}
+
+/* footer */
+#foot {
+    height: 146px;
+    float: bottom;
+    margin-bottom: 0em;
+    background-color: #e4156f;
+}
+
+#sponsor {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+}
+
+#studioform input, #studioform select {
+	border: none;
+	font-weight: bold;
+	font-size: 1.1em;
+	height: 2em;
+}
+
+#studioform input {
+	margin: 0.5em;
+	padding-left: 0.5em;
+	width: 400px;
+	background-color: #CCC;
+}
+
+.styled-select select{
+	background: transparent;
+	width: 428px;
+	height: 2em;
+}
+
+.styled-select {
+	margin: 0.5em;
+	padding: 3px 0 0 0.5em;
+	background: url(http://localhost/wp-content/themes/studio12/images/select-arrow.png) no-repeat right #CCC;
+	width: 400px;
+	overflow: hidden;
+}
+input#saveForm {
+	font-size: 1.3em;
+	height: 2em;
+	width: 4em;
+	background-color: #e4156f;
+	font-family: 'Lobster', cursive;
+	
+}
