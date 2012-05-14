@@ -85,20 +85,25 @@ hr { width: 60%; }
 }
 
 .sidebar {
-    background-color: #FFF;
     width: 23%;
-    padding: 1em 1em 1em 1em;
-    margin: 1em 0em 1em 0%;
+    margin: 1em 0em 0 0;
 }
 
 #sidebar-left{ 
     float:left;
 }
+
+.widget-side-left {
+	margin-top: 1em;
+	background-color: #FFF;
+}
+
 #sidebar-right{ 
+    background-color: #FFF;
     float:right;
 }
 
-.sidebar ul{
+.sidebar ul {
     list-style:none;
     margin-left:-1.5em;
 } 
@@ -106,6 +111,8 @@ hr { width: 60%; }
 .sidebar li a { text-decoration: underline; }
 
 .widget .artist {
+	display: block;
+    padding: 1em 1em 1em 1em;
     text-align: center;
     line-height: 1px;
 }
