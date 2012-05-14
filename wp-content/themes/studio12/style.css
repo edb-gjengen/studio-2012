@@ -146,7 +146,6 @@ hr { width: 60%; }
 }
 
 .post, .event {
-	background: #FFF;
     width: 40%;
     float: center;
     margin: 1em 1em 1em 28.5%;
@@ -215,5 +214,6 @@ input#saveForm {
 }
 
 #frivilligknapp {
-	text-align: center;
+	width: 280px;
+	height: 227px;
 }

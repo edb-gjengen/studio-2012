@@ -1,9 +1,7 @@
 
 <div id="sidebar-left" class="sidebar transparent">
 
-	<div id="frivilligknapp" style="background-image: <?php echo get_template_directory_uri(); ?>/images/knapp_frivillig.jpg;">
-		<span>Bli MED!</span>
-	</div>
+	<img id="frivilligknapp" src="<?php echo get_template_directory_uri(); ?>/images/frivilliglol.png" alt="blimed" />
 
 
    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
