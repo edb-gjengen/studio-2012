@@ -3,17 +3,15 @@
 <?php get_sidebar("right"); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<article <?php post_class('transparent') ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
    <div class="postinfo"> <?php the_time('F jS, Y'); ?> </div>
    <hr \>
-
-
-
+	<?php the_post_thumbnail(); ?>
    <div class="entry">
-     <?php the_content(); ?>
+     <?php the_excerpt(); ?>
    </div>
    
    <footer class="postmetadata">
