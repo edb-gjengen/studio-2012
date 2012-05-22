@@ -127,20 +127,10 @@ hr { width: 60%; }
     
 }
 
-.widget p {
-    padding: 2em;
-}
-
-
-
 .widget .artist {
     display: block;
     text-align: center;
     line-height: 20px;
-}
-
-.widget .artist p {
-    padding: 0;
 }
 
 .widget .artist a {
