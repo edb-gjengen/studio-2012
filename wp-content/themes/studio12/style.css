@@ -131,6 +131,7 @@ hr { width: 60%; }
     display: block;
     text-align: center;
     line-height: 1px;
+    margin-bottom: 3px;
 }
 .widget .artist a {
     font-size: 30px;
