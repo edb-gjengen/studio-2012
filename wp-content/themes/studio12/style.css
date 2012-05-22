@@ -103,7 +103,7 @@ hr { width: 60%; }
 }
 
 .sidebar {
-    width: 23%;
+    width: 20%;
     margin: 1em 0em 0 0;
 }
 
@@ -129,9 +129,8 @@ hr { width: 60%; }
 .sidebar li a { text-decoration: underline; }
 
 .sidebar h2 {
-	padding-top: 0.5em;
-	text-align: center;
-    
+    padding-top: 0.5em;
+    text-align: center;
 }
 
 .widget div {
@@ -172,9 +171,9 @@ hr { width: 60%; }
 
 #main-content {
     background-color: #FFF;
-    width: 50%;
+    width: 55%;
     float: center;
-    margin: 1em 0 0 25%;
+    margin: 1em 0 0 22.5%;
 }
 
 #main-content hr {
@@ -183,7 +182,7 @@ hr { width: 60%; }
 }
 
 #main-content p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .post h2 {
@@ -249,7 +248,7 @@ input#saveForm {
 }
 
 #frivilligknapp {
-	width: 278px;
+	width: 243px;
 }
 .post:first img {
 	height: 200px:
