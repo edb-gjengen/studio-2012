@@ -131,7 +131,7 @@ hr { width: 60%; }
     display: block;
     text-align: center;
     line-height: 1px;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
 }
 .widget .artist a {
     font-size: 30px;
@@ -141,19 +141,19 @@ hr { width: 60%; }
 .widget .artist :hover {
     text-decoration: underline;
 }
-.widget .liten {
+.widget .liten a {
     color: #000;
 }
-.widget .normalliten{
+.widget .normalliten a {
     color: #333;
 }
-.widget .normalstor {
+.widget .normalstor a {
     color: #666;
 }
-.widget .stor {
+.widget .stor a {
     color: #999;
 }
-.widget .mega {
+.widget .mega a {
 color: #CCC;
 }
 
