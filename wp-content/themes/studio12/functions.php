@@ -1,18 +1,19 @@
 <?php
-
 add_theme_support('nav-menus');
 add_theme_support( 'automatic-feed-links' ); //automatic_feed_links();
 add_theme_support( 'post-thumbnails' ); // Makes it easier with image-links :D
-
+set_post_thumbnail_size(250,250,false);
+add_image_size('firstpost', 540, 999, false);
 register_nav_menus( array('header-menu' => 'Header Menu' ) );
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+// Custom background :)
+add_custom_background();
 
 if ( !is_admin() ) {
   wp_deregister_script('jquery');
   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"), false);
   wp_enqueue_script('jquery');
 }
-// Custom background :)
-add_custom_background();
 
 if (function_exists('register_sidebar')) {
   register_sidebar(array(
@@ -92,6 +93,8 @@ class Artist_Widget extends WP_Widget {
 register_widget('Program_Widget'); 
 register_widget('Artist_Widget'); 
 
-
+function custom_excerpt_length( $length ) {
+  return 25;
+}
 
 ?>

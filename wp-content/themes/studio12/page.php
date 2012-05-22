@@ -4,6 +4,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+<div id="main-content">
 <article class="post page <?php the_title(); ?>" id="post-<?php the_ID(); ?>">
 
    <h2><?php the_title(); ?></h2>
@@ -18,10 +19,9 @@
 
    <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
-   </div>
+   </article>
+</div>
    
-   <?php //comments_template(); ?>
-
    <?php endwhile; endif; ?>
 
    <?php get_footer(); ?>

@@ -62,7 +62,18 @@ body {
 }
 
 article {
-    background-color: #FFF;
+    padding: 2em;
+}
+
+article img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.attachment-post-thumbnail {
+	width: 40px:
+	height: 20px:
 }
 
 /* Text and links */
@@ -146,14 +157,23 @@ hr { width: 60%; }
 }
 
 .post, .event {
-    width: 40%;
+    padding: 1em 2em 0 2em;
+}
+
+#main-content {
+    background-color: #FFF;
+    width: 50%;
     float: center;
-    margin: 1em 1em 1em 28.5%;
-    padding: 1em 1em 1em 1em;
+    margin: 1em 0 0 25%;
+}
+
+#main-content hr {
+    width: 100%;
+    color: #e4156f;
 }
 
 .post h2 {
-    text-align: center;
+    margin-top: 0;
 }
 
 
@@ -221,10 +241,4 @@ input#saveForm {
 	height: 200px:
 	width: 400px;
 }
-
-.post img {
-	width: 100px:
-	height: 150px:
-}
-.post
 

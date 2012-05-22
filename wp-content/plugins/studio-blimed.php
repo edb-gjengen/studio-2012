@@ -9,6 +9,7 @@ Author: Sjur Hernes
 Author URI: 
 */
 
+
 //include_once './studio-blimed-admin.php';
 register_activation_hook( __FILE__,  'studio_blimed_install' );
 register_deactivation_hook( __FILE__,  'studio_blimed_uninstall' );
@@ -50,6 +51,12 @@ function studio_blimed_install() {
  * Shows form and inserts on _POST
  */
 function blimed_form( ) {
+
+/*
+Template Name: blimed
+*/
+
+
   global $wpdb;
   $table_name = $wpdb->prefix . 'studio_blimed_table';
   $backspinn = '';
