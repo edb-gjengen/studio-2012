@@ -131,11 +131,18 @@ hr { width: 60%; }
     padding: 2em;
 }
 
+
+
 .widget .artist {
     display: block;
     text-align: center;
     line-height: 20px;
 }
+
+.widget .artist p {
+    padding: 0;
+}
+
 .widget .artist a {
     font-size: 30px;
     font-family: 'Lobster', cursive;
