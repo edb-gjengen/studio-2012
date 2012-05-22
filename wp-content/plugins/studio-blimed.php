@@ -91,11 +91,11 @@ Template Name: blimed
   } 
   echo '    <div id="studioform">
    <form id="funk_data_form" method="post" action="">
-		<input type="text" name="funk_name" id="funk_name" value="Navn" />
-		<input type="text" name="funk_mail" id="funk_mail" value="Mail" />
-		<input type="text" name="funk_tlf" id="funk_tlf" value="Tlf" />
-		<input type="text" name="funk_adresse" id="funk_adresse" value="Adresse" />
-		<input type="text" name="funk_studsted" id="funk_studsted" value="Studiested" />
+		<input type="text" onclick="this.value=\'\';" name="funk_name" id="funk_name" value="Navn" />
+		<input type="text" onclick="this.value=\'\';" name="funk_mail" id="funk_mail" value="Mail" />
+		<input type="text" onclick="this.value=\'\';" name="funk_tlf" id="funk_tlf" value="Tlf" />
+		<input type="text" onclick="this.value=\'\';" name="funk_adresse" id="funk_adresse" value="Adresse" />
+		<input type="text" onclick="this.value=\'\';" name="funk_studsted" id="funk_studsted" value="Studiested" />
 		<div class="styled-select">
 		<select id="funk_valg" name="funk_valg">
 			<option value="">Hva vil du jobbe med?</option>
