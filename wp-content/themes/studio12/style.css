@@ -7,6 +7,16 @@ Author URI: edb.studentersamfundet.no
 Version: 0.1
 */
 
+@font-face { 
+    font-family: Oswald;
+    src: url('Oswald.otf');
+}
+
+@font-face { 
+    font-family: Lobster;
+    src: url('Lobster.ttf');
+}
+
 .transparent {
     filter:alpha(opacity=95); 
     -moz-opacity: 0.95; 
@@ -22,18 +32,15 @@ body {
 }
 
 #header {
-    height: 274px;
+    height: 225px;
     width: 1200px;
-}
-
-#banner {
 }
 
 #logo {
     position: absolute;
     margin-left: 460px;
     top: 40px;
-    height: 285px;
+    height: 245px;
 
 }
 
@@ -180,6 +187,7 @@ hr { width: 60%; }
 }
 
 .post h2 {
+    font-family: Oswald, sans-serif;
     margin-top: 0;
 }
 
@@ -241,8 +249,7 @@ input#saveForm {
 }
 
 #frivilligknapp {
-	width: 280px;
-	height: 227px;
+	width: 278px;
 }
 .post:first img {
 	height: 200px:

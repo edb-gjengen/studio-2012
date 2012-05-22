@@ -13,7 +13,6 @@
   </title>  
   <meta name="description" content="<?php bloginfo('description'); ?>">  
   <meta name="author" content="Studio 2012">
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">  
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
