@@ -130,7 +130,7 @@ hr { width: 60%; }
 .widget .artist {
     display: block;
     text-align: center;
-
+    line-height: 15px;
 }
 .widget .artist a {
     font-size: 30px;
