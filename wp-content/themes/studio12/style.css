@@ -133,6 +133,7 @@ hr { width: 60%; }
     line-height: 1px;
 }
 .widget .artist a {
+    font-size: 30px;
     font-family: 'Lobster', cursive;
     text-decoration: none;
 }
@@ -140,19 +141,19 @@ hr { width: 60%; }
     text-decoration: underline;
 }
 .widget .liten {
-    font-size: 20px;
+    color: #000;
 }
 .widget .normalliten{
-    font-size: 20px;
+    color: #333;
 }
 .widget .normalstor {
-    font-size: 25px;
+    color: #666;
 }
 .widget .stor {
-    font-size: 30px;
+    color: #999;
 }
 .widget .mega {
-    font-size: 35px;
+color: #CCC;
 }
 
 .post, .event {
