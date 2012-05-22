@@ -25,9 +25,10 @@ $c++; ?>
    <div class="entry">
      <?php the_excerpt(25); ?>
    </div>
-  <div style="clear:both;"> </div>
        <hr />
 </article>
+  <div style="clear:both;"> </div>
+
        <?php endif; ?>
 
 	<?php endwhile; ?>
