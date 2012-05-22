@@ -130,7 +130,7 @@ hr { width: 60%; }
 .widget .artist {
     display: block;
     text-align: center;
-    line-height: 1px;
+
     margin-bottom: 10px;
 }
 .widget .artist a {
