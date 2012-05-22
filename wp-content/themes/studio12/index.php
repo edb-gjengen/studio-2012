@@ -27,7 +27,6 @@ $c++; ?>
    </div>
        <hr />
 </article>
-  <div style="clear:both;"> </div>
 
        <?php endif; ?>
 
