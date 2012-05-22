@@ -82,7 +82,7 @@ class Artist_Widget extends WP_Widget {
 	if (get_post_meta($post->ID, 'studio_artist_link', true))
 	  $link = ' <a href="'.get_post_meta($post->ID, 'studio_artist_link', true).'">ekst</a>';
 	else $link = "";
-	echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_font', true).'"><a href="' . $event . '">' . get_the_title() . '</a>'.$link.'</p>';
+	echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_type', true).'"><a href="' . $event . '">' . get_the_title() . '</a>'.$link.'</p>';
 
       }
     } echo "<hr />";
