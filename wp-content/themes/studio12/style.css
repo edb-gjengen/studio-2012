@@ -127,10 +127,6 @@ hr { width: 60%; }
     
 }
 
-.widget div {
-    border-radius: 0px;
-}
-
 .widget .artist {
     display: block;
     text-align: center;
