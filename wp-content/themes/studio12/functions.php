@@ -2,18 +2,20 @@
 add_theme_support('nav-menus');
 add_theme_support( 'automatic-feed-links' ); //automatic_feed_links();
 add_theme_support( 'post-thumbnails' ); // Makes it easier with image-links :D
-set_post_thumbnail_size(250,250,false);
+set_post_thumbnail_size(200,200,false);
 add_image_size('firstpost', 540, 999, false);
 register_nav_menus( array('header-menu' => 'Header Menu' ) );
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 // Custom background :)
 add_custom_background();
 
-if ( !is_admin() ) {
+function studio2012_enqueue_scripts() {
   wp_deregister_script('jquery');
   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"), false);
   wp_enqueue_script('jquery');
 }
+
+add_action('wp_enqueue_scripts', 'studio2012_enqueue_scripts');
 
 if (function_exists('register_sidebar')) {
   register_sidebar(array(
@@ -79,10 +81,7 @@ class Artist_Widget extends WP_Widget {
 	// event-lenka
 	$event = get_post_meta($post->ID, 'studio_artist_event', true);
 	// ekstern lenke for artisten
-	if (get_post_meta($post->ID, 'studio_artist_link', true))
-	  $link = ' <a href="'.get_post_meta($post->ID, 'studio_artist_link', true).'">ekst</a>';
-	else $link = "";
-	echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_type', true).'"><a href="' . $event . '">' . get_the_title() . '</a>'.$link.'</p>';
+	echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_font', true).' '.get_post_meta($event, 'neuf_events_type', true)."\"><a href=\"" . get_post($event)->guid . "\">" . get_the_title() . '</a></p>';
 
       }
     } echo "<hr />";

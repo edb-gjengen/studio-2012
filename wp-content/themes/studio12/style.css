@@ -138,28 +138,26 @@ hr { width: 60%; }
 }
  
 .widget .artist a {
-    font-size: 30px;
     font-family: 'Lobster', cursive;
     text-decoration: none;
 }
 .widget .artist :hover {
     text-decoration: underline;
 }
-.widget .liten a {
-    color: #000;
-}
-.widget .normalliten a {
-    color: #333;
-}
-.widget .normalstor a {
-    color: #666;
-}
-.widget .stor a {
-    color: #999;
-}
-.widget .mega a {
-color: #CCC;
-}
+.widget .liten a { font-size: 18px;}
+.widget .normalliten a { font-size: 21px; }
+.widget .normalstor a { font-size: 24px; }
+.widget .stor a { font-size: 27px; }
+.widget .mega a { font-size: 30px; }
+.widget .Konsert a { color: blue; }
+.widget .Annet a { color: red; }
+.widget .Foredrag a { color: yellow; }
+.widget .Klub a { color: green; }
+.widget .Quiz a { color: purple; }
+.widget .Stand-up a { color: pink; }
+.widget .Konkurranse a { color: cyan; }
+.widget .Lyntale a { color: magenta; }
+
 
 .post, .event {
     padding: 1em 2em 0 2em;

@@ -112,8 +112,8 @@ Create the fields the post type should have
 
     foreach ($events as $event) {
       if ($event->post_title != '' ){
-	echo '<option value="'.$event->guid.'"';
-	if($event->guid == $artist_event)
+	echo '<option value="'.$event->ID.'"';
+	if($event->ID == $artist_event)
 	  echo ' selected="selected"';
 	echo '>'.$event->post_title.'</option>';
       }
