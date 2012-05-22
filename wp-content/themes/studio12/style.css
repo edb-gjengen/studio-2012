@@ -127,6 +127,10 @@ hr { width: 60%; }
     
 }
 
+.widget p {
+    padding: 2em;
+}
+
 .widget .artist {
     display: block;
     text-align: center;
