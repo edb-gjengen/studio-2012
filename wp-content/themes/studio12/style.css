@@ -128,8 +128,7 @@ hr { width: 60%; }
 }
 
 .widget .artist {
-	display: block;
-    padding: 1em 1em 1em 1em;
+    display: block;
     text-align: center;
     line-height: 1px;
 }
