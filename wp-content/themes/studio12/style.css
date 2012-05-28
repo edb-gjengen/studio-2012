@@ -292,3 +292,26 @@ input#saveForm {
 .lesmer {
     float: right;
 }
+
+.event-table {
+    border-spacing: 0;
+    border-width: 0;
+}
+
+.tr_event{
+    height: 3em;
+}
+.tr_event td {
+    cursor: pointer;
+    padding: 0.8em;
+}
+ 'Annet','Foredrag','Klubb','Konsert','Quiz',
+			'Stand-up','Konkurranse', 'Lyntale'
+tbody .Quiz, tbody .Klubb, tbody .Konkurranse { background-color: #a4dd9c; } /* Lysest grønn */
+tbody .Quiz:hover, tbody .Klubb:hover, tbody .Konkurranse:hover { background-color: #64c548; } /* lys grønn */
+tbody .Konsert { background-color: #f57ec5; } /* Lysest rosa */
+tbody .Konsert:hover { background-color: #ec3e9d; } /* Lys rosa */
+tbody .Annet, tbody .Stand-up { background-color: #b6a4c9; } /* Lysest lilla */
+tbody .Annet:hover, tbody Stand-up:hover { background-color: #925ab3; } /* lys lilla */
+tbody .Foredrag, tbody .Lyntale { background-color: #ade3d4; } /* lysest Blå */
+tbody .Foredrag:hover, tbody .Lyntale:hover { background-color: #67ccc0; } /* lys blå */

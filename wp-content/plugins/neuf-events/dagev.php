@@ -269,12 +269,11 @@ if (!class_exists("NeufEvents")) {
 	  $artist = get_post_meta( $post->ID, 'neuf_events_artist',  true) ;
 	  
 	  
-	  $html .= '    <tr>';
-	  $html .= '        <td class="time" style="width:10%;">' . date("H:i", $time) . '</td>';
-	  $html .= '        <td class="artist" style="width:10%;">' . $artist . '</td>';
-	  $html .= '        <td class="title" style="padding-right:10px;"><a href="' . get_permalink() . '">' . get_the_title() . '</a></td>';
+	  $html .= '    <tr class="tr_event '.$type.'" onclick="document.location = \''.get_permalink().'\';">';
+ 	  $html .= '        <td class="time"  style="font-size:smaller; width:10%;">' . date("d/m H:i", $time) . '</td>';
+	  $html .= '        <td class="title" style="padding-right:10px;">' . get_the_title() . '</td>';
 	  $html .= '        <td class="type" style="font-size:smaller;">' . $type . '</td>';
-	  $html .= '        <td class="place" style="width:27%;padding-left:10px;">' . get_the_title($venue) . '</td>';
+	  $html .= '        <td class="place" style="width:10%;padding-left:5px;">' . get_the_title($venue) . '</td>';
 	  $html .= '    </tr>';
 	} 
 	endwhile;
