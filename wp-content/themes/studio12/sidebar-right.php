@@ -1,4 +1,9 @@
-<div id="sidebar-right" class="sidebar transparent">
+<div id="sidebar-right" class="sidebar">
+
+   <div id="countdown">
+   <h2><?php echo (int)(((mktime (10,0,0,8,13,2012) - time())/3600)/24); ?> dager igjen! </h2>
+
+</div>
 
    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets2')) : else : ?>
     

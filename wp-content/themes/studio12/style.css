@@ -125,13 +125,25 @@ hr { width: 60%; }
 }
 
 .widget-side-left {
-	margin-top: 1em;
-	background-color: #FFF;
+    margin-top: 1em;
+    background-color: #FFF;
+}
+#sidebar-right{ 
+    float:right;
+}
+.widget-side-right{ 
+    background-color: #FFF;
 }
 
-#sidebar-right{ 
-    background-color: #FFF;
-    float:right;
+#countdown {
+    height: 3em;
+    width: 100%;
+    background-color: rgb(111, 190, 70);
+}
+#countdown h2 {
+    color: #FFF;
+    text-shadow: 1px 2px #000;
+    margin: 0;
 }
 
 .sidebar ul {
