@@ -19,7 +19,7 @@ $c++; ?>
        <hr />
 </article>
        <?php else : ?>
-<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class("regular") ?> id="post-<?php the_ID(); ?>">
        <?php the_post_thumbnail(); ?>
    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
    <div class="entry">
