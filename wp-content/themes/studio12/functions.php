@@ -93,7 +93,7 @@ register_widget('Program_Widget');
 register_widget('Artist_Widget'); 
 
 function custom_excerpt_length( $length ) {
-  return 35;
+  return 25;
 }
 
 ?>

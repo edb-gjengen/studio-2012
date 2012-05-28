@@ -15,7 +15,8 @@ $c++; ?>
    <div class="entry">
      <?php the_excerpt(25); ?>
    </div>
-
+  <a href="<?php the_permalink() ?>">
+  <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /> <br /><br />
        <hr />
 </article>
        <?php else : ?>
@@ -25,7 +26,10 @@ $c++; ?>
    <div class="entry">
      <?php the_excerpt(25); ?>
    </div>
-  <br />
+  <a href="<?php the_permalink() ?>">
+  <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /> <br /><br />
+
+
        <hr />
 </article>
 

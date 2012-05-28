@@ -283,3 +283,7 @@ input#saveForm {
 #blimed_tilbake_fail {
     background-color: red;
 }
+
+.lesmer {
+    float: right;
+}
