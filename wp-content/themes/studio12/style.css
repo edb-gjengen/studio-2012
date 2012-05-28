@@ -71,6 +71,9 @@ body {
     font-weight: bold;
     font-size: 1.1em;
 }
+.menu-item a:hover {
+    color: #FCC;
+}
 
 article {
     padding: 2em;
