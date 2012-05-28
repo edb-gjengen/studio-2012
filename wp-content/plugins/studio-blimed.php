@@ -75,7 +75,6 @@ Template Name: blimed
 						       'mail'        => mysql_real_escape_string($_POST['funk_mail'])                   ,
 						       'studsted'    => mysql_real_escape_string($_POST['funk_studsted'])               ,
 						       'adresse'    => mysql_real_escape_string($_POST['funk_adresse'])               ,
-						       'jobbsted'    => mysql_real_escape_string($_POST['funk_jobbsted'])               ,
 						       'valg'       => mysql_real_escape_string($_POST['funk_valg'])                  ,
 						       )
 				   );
@@ -91,11 +90,11 @@ Template Name: blimed
   } 
   echo '    <div id="studioform">
    <form id="funk_data_form" method="post" action="">
-		<input type="text" onclick="this.value=\'\';" name="funk_name" id="funk_name" value="Navn" />
-		<input type="text" onclick="this.value=\'\';" name="funk_mail" id="funk_mail" value="Mail" />
-		<input type="text" onclick="this.value=\'\';" name="funk_tlf" id="funk_tlf" value="Tlf" />
-		<input type="text" onclick="this.value=\'\';" name="funk_adresse" id="funk_adresse" value="Adresse" />
-		<input type="text" onclick="this.value=\'\';" name="funk_studsted" id="funk_studsted" value="Studiested" />
+		<input type="text" onclick="this.value=\'\';" name="funk_name" id="funk_name" value="Navn" title="Navn" />
+		<input type="text" onclick="this.value=\'\';" name="funk_mail" id="funk_mail" value="Mail" title="Mail" />
+		<input type="text" onclick="this.value=\'\';" name="funk_tlf" id="funk_tlf" value="Tlf" title="Tlf" />
+		<input type="text" onclick="this.value=\'\';" name="funk_adresse" id="funk_adresse" value="Adresse" title="Adresse" />
+		<input type="text" onclick="this.value=\'\';" name="funk_studsted" id="funk_studsted" value="Studiested" title="Studiested" />
 		<div class="styled-select">
 		<select id="funk_valg" name="funk_valg">
 			<option value="">Hva vil du jobbe med?</option>
@@ -117,7 +116,7 @@ Template Name: blimed
 
 add_shortcode('blimed_form', 'blimed_form');
 
-function blimed_admin_content($param, $date){
+function blimed_admin_content($param){
 
     global $wpdb;
         
@@ -126,35 +125,31 @@ function blimed_admin_content($param, $date){
     if ($param == 'all') {
         echo "Søket som er utført er: " . $show_query . "<br /><br />";
         $funks = $wpdb->get_results($show_query);
-
         blimed_print_table($funks);
+    } else {
+      echo "Søket som er utført er: " . $show_query . " WHERE valg = '" . $param . "'<br /><br />";
+      $funks = $wpdb->get_results($show_query." WHERE valg = '".$param."'");
+      blimed_print_table($funks);
     }
 }
 
 function blimed_print_table( $funks ){
-        
         echo "<table style='border:1px;'>
             <tr>
                 <th>Navn&nbsp;&nbsp;</th>
                 <th>Epost&nbsp;&nbsp;</th>
                 <th>Telefon&nbsp;&nbsp;</th>
+                <th>Adresse&nbsp;&nbsp;</th>
                 <th>Studiested&nbsp;&nbsp;</th>
-                <th>Arbeidsted&nbsp;&nbsp;</th>
-                <th>Førstevalg&nbsp;&nbsp;</th>
-                <th>Andrevalg&nbsp;&nbsp;</th>
-                <th>Tredjevalg&nbsp;&nbsp;</th>
-                <th>Dager&nbsp;&nbsp;</th>
-                <th>Tider&nbsp;&nbsp;</th>
-                <th>Kommentar&nbsp;&nbsp;</th>
+                <th>Valg&nbsp;&nbsp;</th>
             </tr>
         ";
         foreach ($funks as $funk) {
-            $dager = ""; $tider = "";
-    
             echo "<tr>
                     <td>$funk->name&nbsp;&nbsp;</td>
                     <td>$funk->mail&nbsp;&nbsp;</td>
                     <td>$funk->tlf&nbsp;&nbsp;</td>
+                    <td>$funk->adresse&nbsp;&nbsp;</td>
                     <td>$funk->studsted&nbsp;&nbsp;</td>
                     <td>$funk->valg&nbsp;&nbsp;</td>
                   </tr>" ;
@@ -179,40 +174,14 @@ function blimed_admin() {
             <option value="transport">Transport</option>
             <option value="trivsel">Trivsel</option>
         </select>
-        <select id="blimed_admin_date" name="blimed_admin_date">
-            <option value="all">all</option>
-            <option value="man1">Mandag uke 1</option>
-            <option value="tir1">Tirsdag uke 1</option>
-            <option value="ons1">Onsdag uke 1</option>
-            <option value="tor1">Torsdag uke 1</option>
-            <option value="fre1">Fredag uke 1</option>
-            <option value="lor1">Lørdag uke 1</option>
-            <option value="son1">Søndag uke 1</option>
-
-            <option value="man2">Mandag uke 2</option>
-            <option value="tir2">Tirsdag uke 2</option>
-            <option value="ons2">Onsdag uke 2</option>
-            <option value="tor2">Torsdag uke 2</option>
-            <option value="fre2">Fredag uke 2</option>
-            <option value="lor2">Lørdag uke 2</option>
-            <option value="son2">Søndag uke 2</option>
-
-            <option value="man3">Mandag uke 3</option>
-            <option value="tir3">Tirsdag uke 3</option>
-            <option value="ons3">Onsdag uke 3</option>
-            <option value="tor3">Torsdag uke 3</option>
-            <option value="fre3">Fredag uke 3</option>
-            <option value="lor3">Lørdag uke 3</option>
-            <option value="son3">Søndag uke 3</option>
-        </select>
         <input id="saveForm" class="submitButton" type="submit" name="sort" value="Sorter" />
     </form>
     '; 
 
     if($_POST['sort'])
-        blimed_admin_content($_POST['blimed_admin_sort'], $_POST['blimed_admin_date']);
+        blimed_admin_content($_POST['blimed_admin_sort']);
     else
-        blimed_admin_content('all', 'all'); 
+        blimed_admin_content('all'); 
     echo '
 </div>';
 }
