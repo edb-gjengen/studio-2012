@@ -25,6 +25,7 @@ $c++; ?>
    <div class="entry">
      <?php the_excerpt(25); ?>
    </div>
+  <br />
        <hr />
 </article>
 
