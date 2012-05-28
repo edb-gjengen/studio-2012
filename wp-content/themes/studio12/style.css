@@ -181,10 +181,10 @@ hr { width: 60%; }
 .widget .str4 a { font-size: 30px; }
 .widget .str5 a { font-size: 34px; }
 .widget .str6 a { font-size: 38px; }
-.widget .blueart a   { color: rgb(98, 60, 151)  ; }
+.widget .blueart a   { color: rgb(0, 186, 192)  ; }
 .widget .redart a    { color: rgb(228, 44, 122) ; }
 .widget .greenart a  { color: rgb(14, 174, 91)  ; }
-.widget .purpleart a { color: rgb(0, 186, 192)  ; }
+.widget .purpleart a { color: rgb(98, 60, 151)  ; }
 
 .post, .event {
     padding: 1em 2em 0 2em;
