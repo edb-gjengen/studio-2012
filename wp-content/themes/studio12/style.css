@@ -307,22 +307,22 @@ input#saveForm {
 }
 
 tbody .Quiz, tbody .Klubb, tbody .Konkurranse {  /* Lysest grønn */
-/*    color: #237640; */
-    background-color: #a4dd9c; 
+    color: #237640;
+    
 }
-tbody .Quiz:hover, tbody .Klubb:hover, tbody .Konkurranse:hover { background-color: #64c548; } /* lys grønn */
+tbody .Quiz:hover, tbody .Klubb:hover, tbody .Konkurranse:hover { background-color: #a4dd9c; } /* lys grønn */
 tbody .Konsert {  /* Lysest rosa */
-/*    color: #a11277;*/
-    background-color: #f57ec5; 
+    color: #a11277;
+
 }
-tbody .Konsert:hover {   background-color: #ec3e9d; } /* Lys rosa */
+tbody .Konsert:hover { background-color: #f57ec5; } /* Lys rosa */
 tbody .Annet, tbody .Stand-up {  /* Lysest lilla */
-/*    color: #3a2c7b; */
-    background-color: #b6a4c9;
+    color: #3a2c7b;
+    
 }
-tbody .Annet:hover, tbody Stand-up:hover { background-color: #925ab3; }  /* lys lilla */
+tbody .Annet:hover, tbody Stand-up:hover { background-color: #b6a4c9; }  /* lys lilla */
 tbody .Foredrag, tbody .Lyntale {  /* lysest Blå */
-/*    color: #33a39e; */
-    background-color: #ade3d4;
+    color: #33a39e;
+    
 }
-tbody .Foredrag:hover, tbody .Lyntale:hover { background-color: #67ccc0; } /* lys blå */
+tbody .Foredrag:hover, tbody .Lyntale:hover { background-color: #ade3d4; } /* lys blå */
