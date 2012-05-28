@@ -82,9 +82,9 @@ article {
 }
 
 article .entry a {
-    font-weight: bold;
+    color: #DDD;
 } article .entry a:hover {
-    font-weight: bolder;
+    text-decoration: underline;
 }
 
 article img {
