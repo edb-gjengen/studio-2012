@@ -81,6 +81,12 @@ article {
     padding: 2em;
 }
 
+article .entry a {
+    font-weight: bold;
+} article .entry a:hover {
+    font-weight: bolder;
+}
+
 article img {
     float: left;
     margin-right: 1em;
@@ -98,12 +104,10 @@ a {
     color: #000;
     text-decoration: none;
 }
-a :hover { text-decoration: underline; } 
 
 h1, h2, h3 { font-family: 'Lobster', cursive; }
 
 hr { width: 60%; }
-
 
 /* Site */
 #page-wrap {
