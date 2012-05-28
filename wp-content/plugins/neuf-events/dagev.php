@@ -235,9 +235,7 @@ if (!class_exists("NeufEvents")) {
 	    add_post_meta($post_id, $key, $value, true);
 	
 	return $post_id;
-
     }
-
 
       /** View of the custom page */
 

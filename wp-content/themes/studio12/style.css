@@ -169,7 +169,7 @@ hr { width: 60%; }
  
 .widget .artist a {
     font-family: 'Lobster', cursive;
-    text-shadow: 1px 1px #666;
+
     text-decoration: none;
 }
 .widget .artist :hover {
