@@ -39,16 +39,17 @@ body {
 #logo {
     position: absolute;
     margin-left: 460px;
-    top: 40px;
-    height: 245px;
+    top: 35px;
+    height: 235px;
 
 }
 
 #nav {
-    margin-top: 0;
+
     background-color: #e4156f;
     height: 40px;
 }
+
 
 #menu-header-menu {
     margin: 0;
@@ -63,6 +64,8 @@ body {
     text-align: center;
 }
 .menu-item a {
+    text-shadow: 2px 1px #000000;
+    color: #FFF;
     line-height: 40px;
     font-family: 'Lobster', cursive;
     font-weight: bold;
