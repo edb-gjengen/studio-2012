@@ -45,8 +45,7 @@ body {
 }
 
 #nav {
-
-    background-color: #e4156f;
+    background-color: rgb(228, 44, 122);
     height: 40px;
 }
 
@@ -136,7 +135,7 @@ hr { width: 60%; }
 #countdown {
     height: 3.5em;
     width: 100%;
-    background-color: rgb(111, 190, 70);
+    background-color: rgb(14, 174, 91); 
 }
 #countdown h2 {
     color: #FFF;
@@ -273,12 +272,21 @@ input#saveForm {
 	width: 240px;
 }
 
-#blimed_tilbake_ok {
-    background-color: rgb(111, 190, 70);
+#blimed_tilbake_ok p {
+    background-color: rgb(14, 174, 91);
+    text-align: center;
+    padding: 0.5em;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-#blimed_tilbake_fail {
+
+#blimed_tilbake_fail p {
     background-color: red;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .lesmer {

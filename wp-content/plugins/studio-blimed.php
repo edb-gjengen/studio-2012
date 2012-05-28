@@ -80,12 +80,12 @@ Template Name: blimed
 				   );
       
       if ($settinnidb) {
-	echo '<div id="blimed_tilbake_ok">Du er nå registrert</div>';
+	echo '<div id="blimed_tilbake_ok"><p>Du er nå registrert</p></div>';
 	
 	// TODO MAILER!!
 
-      } else echo '<div id="blimed_tilbake_fail">Beklager teknisk feil, sjekk verdiene og prøv på nytt</div>';
-    } else echo '<div id="blimed_tilbake_fail">Du må oppgi navn, epost, tlf og et arbeidsområde</div>';    
+      } else echo '<div id="blimed_tilbake_fail"><p>Beklager teknisk feil, sjekk verdiene og prøv på nytt</p></div>';
+    } else echo '<div id="blimed_tilbake_fail"><p>Du må oppgi navn, epost, tlf og et arbeidsområde</p></div>';    
 
   } 
   echo '    <div id="studioform">
