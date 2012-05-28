@@ -175,20 +175,16 @@ hr { width: 60%; }
 .widget .artist :hover {
     text-decoration: underline;
 }
-.widget .liten a { font-size: 18px;}
-.widget .normalliten a { font-size: 21px; }
-.widget .normalstor a { font-size: 24px; }
-.widget .stor a { font-size: 27px; }
-.widget .mega a { font-size: 30px; }
-.widget .Konsert a { color: blue; }
-.widget .Annet a { color: red; }
-.widget .Foredrag a { color: yellow; }
-.widget .Klub a { color: green; }
-.widget .Quiz a { color: purple; }
-.widget .Stand-up a { color: pink; }
-.widget .Konkurranse a { color: cyan; }
-.widget .Lyntale a { color: magenta; }
-
+.widget .str1 a { font-size: 18px;}
+.widget .str2 a { font-size: 22px; }
+.widget .str3 a { font-size: 26px; }
+.widget .str4 a { font-size: 30px; }
+.widget .str5 a { font-size: 34px; }
+.widget .str6 a { font-size: 38px; }
+.widget .blueart a   { color: rgb(46, 168, 224); }
+.widget .redart a    { color: rgb(236, 59, 38) ; }
+.widget .greenart a  { color: rgb(6, 164, 76)  ; }
+.widget .purpleart a { color: rgb(101, 45, 144); }
 
 .post, .event {
     padding: 1em 2em 0 2em;

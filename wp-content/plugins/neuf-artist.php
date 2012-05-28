@@ -82,6 +82,7 @@ Create the fields the post type should have
 	global $post;
 
 	$artist_font = get_post_meta($post->ID, 'studio_artist_font' , true);
+	$artist_color = get_post_meta($post->ID, 'studio_artist_color' , true);
 	$artist_link = get_post_meta($post->ID, 'studio_artist_link', true);
 	$artist_event = get_post_meta($post->ID, 'studio_artist_event', true);
 
@@ -89,12 +90,12 @@ Create the fields the post type should have
 	echo '<select name="studio_artist_font">';
 	echo $artist_font;
 
-	$types = array( array('name' => 'Flink i Guitarhero' , 'size' => 'minst'),
-			array('name' => 'Liten Artist' , 'size' => 'liten'),
-			array('name' => 'Mellomstor Artist' , 'size' => 'normalliten'),
-			array('name' => 'Stor Artist' , 'size' => 'normalstor'),
-			array('name' => 'Oh! Dette blir fest!' , 'size' => 'stor'),
-			array('name' => 'Hopalong Knut!!' , 'size' => 'mega'),
+	$types = array( array('name' => 'Flink i Guitarhero' , 'size' => 'str1'),
+			array('name' => 'Liten Artist' , 'size' => 'str2'),
+			array('name' => 'Mellomstor Artist' , 'size' => 'str3'),
+			array('name' => 'Stor Artist' , 'size' => 'str4'),
+			array('name' => 'Oh! Dette blir fest!' , 'size' => 'str5'),
+			array('name' => 'Hopalong Knut!!' , 'size' => 'str6'),
 			);
 
 	foreach($types as $type){
@@ -104,6 +105,26 @@ Create the fields the post type should have
 	  echo '>' . $type['name'] . '</option>';
 	}
 	echo '</select><br />';
+
+	echo "artistfarge:";
+	echo '<select name="studio_artist_color">';
+	echo $artist_color;
+
+	$types = array( array('name' => 'Red' , 'clr' => 'redart'),
+			array('name' => 'Blue' , 'clr' => 'blueart'),
+			array('name' => 'Purple' , 'clr' => 'purpleart'),
+			array('name' => 'Green' , 'clr' => 'greenart'),
+			);
+
+	foreach($types as $type){
+	  echo '<option value="' . $type['clr'] . '"';
+	  if($type['clr'] == $artist_color)
+	    echo ' selected="selected"';
+	  echo '>' . $type['name'] . '</option>';
+	}
+	echo '</select><br />';
+
+
 
     echo 'Event:
 <select name="studio_artist_event">';
@@ -141,6 +162,7 @@ echo '<br />Artisturl:<br /><input type="text" name="studio_artist_link" value="
 
 	// Get posted data
 	$studart['studio_artist_font'] = $_POST['studio_artist_font' ];
+	$studart['studio_artist_color'] = $_POST['studio_artist_color' ];
 	$studart['studio_artist_link'] = $_POST['studio_artist_link'];
 	$studart['studio_artist_event'] = $_POST['studio_artist_event'];
 

@@ -72,7 +72,7 @@ class Artist_Widget extends WP_Widget {
   function widget($args, $instance) {
     global $post, $wp_locale;
     $args['title'] = '';
-    $studart = new WP_Query( array('post_type' => 'artist', 'posts_per_page' => -1, 'orderby' => 'rand'));
+    $studart = new WP_Query( array('post_type' => 'artist', 'posts_per_page' => -1, 'orderby' => 'meta_value', 'meta_key' => 'studio_artist_font'));
     echo $args['before_widget'] . $args['before_title'] . $args['title'] . $args['after_title'];
     if ( $studart->have_posts() ) {
       while ( $studart->have_posts() ) {
@@ -81,7 +81,7 @@ class Artist_Widget extends WP_Widget {
 	// event-lenka
 	$event = get_post_meta($post->ID, 'studio_artist_event', true);
 	// ekstern lenke for artisten
-	echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_font', true).' '.get_post_meta($event, 'neuf_events_type', true)."\"><a href=\"" . get_post($event)->guid . "\">" . get_the_title() . '</a></p>';
+	echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_font', true).' '.get_post_meta($post->ID, 'studio_artist_color', true)."\"><a href=\"" . get_post($event)->guid . "\">" . get_the_title() . '</a></p>';
 
       }
     } echo "<hr />";
