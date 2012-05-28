@@ -142,7 +142,6 @@ hr { width: 60%; }
 }
 #countdown h2 {
     color: #FFF;
-
     text-shadow: 1px 2px #000;
     margin: 0;
 }
@@ -279,4 +278,10 @@ input#saveForm {
 	width: 240px;
 }
 
+#blimed_tilbake_ok {
+    background-color: rgb(111, 190, 70);
+}
 
+#blimed_tilbake_fail {
+    background-color: red;
+}

@@ -80,12 +80,12 @@ Template Name: blimed
 				   );
       
       if ($settinnidb) {
-	$backspinn = 'Du er nå registrert';
+	echo '<div id="blimed_tilbake_ok">Du er nå registrert</div>';
 	
 	// TODO MAILER!!
 
-      } else $backspinn = 'Beklager teknisk feil, sjekk verdiene og prøv på nytt';
-    } else $backspinn = 'Du må oppgi navn, epost, tlf og minst et arbeidsområde';    
+      } else echo '<div id="blimed_tilbake_fail">Beklager teknisk feil, sjekk verdiene og prøv på nytt</div>';
+    } else echo '<div id="blimed_tilbake_fail">Du må oppgi navn, epost, tlf og et arbeidsområde</div>';    
 
   } 
   echo '    <div id="studioform">
@@ -108,10 +108,6 @@ Template Name: blimed
 		</div>
 		<input id="saveForm" class="submitButton" type="submit" name="save" value="Send" />
 		</form></div>';
-
-    
-  if ($backspinn != '') echo $backspinn;
-  else echo '<a href="#"><span class="frontbox" src="#studioform" height="450" title="blimed"></span>Bli med</a>';
 }
 
 add_shortcode('blimed_form', 'blimed_form');
