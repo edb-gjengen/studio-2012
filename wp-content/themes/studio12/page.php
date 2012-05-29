@@ -20,6 +20,7 @@
    <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
    </article>
+<div style="clear:both;"></div>
 </div>
    
    <?php endwhile; endif; ?>
