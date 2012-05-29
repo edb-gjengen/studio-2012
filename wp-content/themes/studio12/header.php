@@ -25,7 +25,7 @@
        <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" />
        <img id="banner" src="<?php echo get_template_directory_uri(); ?>/images/header.png" usemap="#homemap" />
        <map name="homemap">
-           <area shape="rect" coords="15,40,410,166" href="sun.htm" alt="Home" />
+           <area shape="rect" coords="15,40,410,166" href='<?php echo site_url(); ?>' alt="Home" />
        </map>
     </div>
        <div id="nav"><?php wp_nav_menu(array('link_before' => ''));?></div>
