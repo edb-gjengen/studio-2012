@@ -84,7 +84,7 @@ article .entry a:hover {
     text-decoration: underline;
 }
 
-article img {
+article img.attachement-restpost {
     float: left;
     margin-right: 1em;
     margin-bottom: 1em;
