@@ -4,6 +4,7 @@ add_theme_support( 'automatic-feed-links' ); //automatic_feed_links();
 add_theme_support( 'post-thumbnails' ); // Makes it easier with image-links :D
 add_image_size('restpost', 200, 200, true);
 add_image_size('firstpost', 590, 250, true);
+add_image_size('singlepost', 590, 590, false);
 register_nav_menus( array('header-menu' => 'Header Menu' ) );
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 // Custom background :)
