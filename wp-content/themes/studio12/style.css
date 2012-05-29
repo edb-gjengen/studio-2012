@@ -65,6 +65,8 @@ body {
 */
 }
 .menu-item a {
+    display: block;
+    height: 100%;
     text-shadow: 2px 2px #000000;
     color: #FFF;
     line-height: 40px;
