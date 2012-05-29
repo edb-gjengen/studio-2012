@@ -42,9 +42,9 @@ if ($post->post_type == "event") {
 </div>
 
 <?php edit_post_link('Edit this entry','','.'); ?>
-
-</article>
 <div style="clear:both;"><div>
+</article>
+
 </div>
 
 <?php endwhile; endif; ?>
