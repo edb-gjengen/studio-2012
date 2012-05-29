@@ -19,7 +19,7 @@ $c++; ?>
   <a href="<?php the_permalink() ?>">
   <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /></a>
 </div>
-       <hr />
+       <hr style="margin-top: 2em;" />
 </article>
        <?php else : ?>
 <article <?php post_class("regular") ?> id="post-<?php the_ID(); ?>">
