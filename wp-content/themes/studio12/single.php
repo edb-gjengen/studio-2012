@@ -26,6 +26,7 @@ if ($post->post_type == "event") {
 } elseif ($post->post_type == "venue") { 
   echo '<div class="venue-size">Kapasitet: ' . get_post_meta($post->ID, 'neuf_venues_venuesize', true) . '</div>';
 }  
+
 ?>
 
 
@@ -43,6 +44,7 @@ if ($post->post_type == "event") {
 <?php edit_post_link('Edit this entry','','.'); ?>
 
 </article>
+<div style="clear:both;"><div>
 </div>
 
 <?php endwhile; endif; ?>
