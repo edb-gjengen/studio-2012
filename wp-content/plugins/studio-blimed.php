@@ -98,11 +98,12 @@ Template Name: blimed
 		<div class="styled-select">
 		<select id="funk_valg" name="funk_valg">
 			<option value="">Hva vil du jobbe med?</option>
-			<option value="artist">Artist</option>
+			<option value="vertskap">Vertskap</option>
 			<option value="konsert">Konsert</option>
 			<option value="bar">Bar</option>
-            <option value="teknisk">Teknisk</option>
-            <option value="transport">Transport</option>
+                        <option value="teknisk">Teknisk</option>
+                        <option value="transport">Transport</option>
+                        <option value="pr">PR</option>
 			<option value="trivsel">Trivsel</option>
 			</select>
 		</div>
@@ -163,11 +164,12 @@ function blimed_admin() {
         hvem skal vises:
         <select id="blimed_admin_sort" name="blimed_admin_sort">
             <option value="all">all</option>
-            <option value="artist">Artist</option>
+            <option value="vertskap">Vertskap</option>
             <option value="konsert">Konsert</option>
             <option value="bar">Bar</option>
             <option value="teknisk">Teknisk</option>
             <option value="transport">Transport</option>
+            <option value="pr">PR</option>
             <option value="trivsel">Trivsel</option>
         </select>
         <input id="saveForm" class="submitButton" type="submit" name="sort" value="Sorter" />
