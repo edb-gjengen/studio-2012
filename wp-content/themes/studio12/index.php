@@ -9,7 +9,7 @@ $c++; ?>
 
 <?php if($c == 1) : ?>
 <article <?php post_class("firstpostindex") ?> id="post-<?php the_ID(); ?>">
-<div >
+<div>
   <?php the_post_thumbnail('firstpost'); ?>
    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
@@ -23,7 +23,7 @@ $c++; ?>
 </article>
        <?php else : ?>
 <article <?php post_class("regular") ?> id="post-<?php the_ID(); ?>">
-<div style="height: 220px;">
+<div style="height: 210px;">
        <?php the_post_thumbnail('restpost'); ?>
    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
    <div class="entry">
