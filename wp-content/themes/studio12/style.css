@@ -197,12 +197,17 @@ hr { width: 60%; }
 }
 
 #main-content hr {
+    margin-top: 1em;
     width: 100%;
     color: #e4156f;
 }
 
 #main-content p {
     font-size: 0.9em;
+}
+
+#main-content .entry {
+
 }
 
 .post h2 {

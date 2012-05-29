@@ -9,27 +9,29 @@ $c++; ?>
 
 <?php if($c == 1) : ?>
 <article <?php post_class("firstpostindex") ?> id="post-<?php the_ID(); ?>">
-  <?php the_post_thumbnail("firstpost"); ?>
+<div style="height: 400px;">
+  <?php the_post_thumbnail('firstpost'); ?>
    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
    <div class="entry">
-     <?php the_excerpt(25); ?>
+     <?php the_excerpt(); ?>
    </div>
   <a href="<?php the_permalink() ?>">
-  <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /> <br /><br />
+  <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /></a>
+</div>
        <hr />
 </article>
        <?php else : ?>
 <article <?php post_class("regular") ?> id="post-<?php the_ID(); ?>">
-       <?php the_post_thumbnail(); ?>
+<div style="height: 220px;">
+       <?php the_post_thumbnail('restpost'); ?>
    <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
    <div class="entry">
-     <?php the_excerpt(25); ?>
+     <?php the_excerpt(); ?>
    </div>
   <a href="<?php the_permalink() ?>">
-  <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /> <br /><br />
-
-
+  <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /></a>
+</div>
        <hr />
 </article>
 
