@@ -6,15 +6,13 @@
 <div id="main-content">
 <article <?php post_class("event") ?> id="post-<?php the_ID(); ?>">
    
-   <h2><?php the_title(); ?></h2>
-   
    <div class="entry">
 
       <?php 
 
    if (has_post_thumbnail())
      echo the_post_thumbnail("singlepost");
-
+   <h2><?php the_title(); ?></h2>
 if ($post->post_type == "event") {
   $type = get_post_meta($post->ID, 'neuf_events_type', true);
   echo '<div class="event-time">Starter: ' . date('H:i', get_post_meta($post->ID, 'neuf_events_starttime', true)) . '</div>';
