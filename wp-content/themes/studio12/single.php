@@ -13,7 +13,7 @@
       <?php 
 
    if (has_post_thumbnail())
-     echo the_post_thumbnail(array(500, 9999));
+     echo the_post_thumbnail("singlepost");
 
 if ($post->post_type == "event") {
   $type = get_post_meta($post->ID, 'neuf_events_type', true);
