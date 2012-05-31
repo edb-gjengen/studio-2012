@@ -57,7 +57,7 @@ body {
 
 .menu-item {
     float: left;
-    margin-left: 4.8em;
+    margin-left: 2.8em;
     list-style: none;
 /*
     width: 125px;
@@ -73,6 +73,10 @@ body {
     font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 1.1em;
+    padding: 0 1em 0 1em;
+}
+.menu-item a:hover {
+    background-color: #f57ec5;
 }
 
 article {
@@ -321,7 +325,6 @@ tbody .Quiz, tbody .Klubb, tbody .Konkurranse {  /* Lysest grønn */
 tbody .Quiz:hover, tbody .Klubb:hover, tbody .Konkurranse:hover { background-color: #a4dd9c; } /* lys grønn */
 tbody .Konsert {  /* Lysest rosa */
     color: #a11277;
-
 }
 tbody .Konsert:hover { background-color: #f57ec5; } /* Lys rosa */
 tbody .Annet, tbody .Stand-up {  /* Lysest lilla */
