@@ -129,7 +129,6 @@ hr { width: 60%; }
 }
 #sidebar-right{ 
     float:right;
-    text-align: left;
 }
 .widget-side-right{ 
     background-color: #FFF;
@@ -165,7 +164,8 @@ hr { width: 60%; }
 
 .widget .artist {
     display: block;
-    text-align: center;
+    text-align: left;
+
     line-height: 20px;
 }
  
