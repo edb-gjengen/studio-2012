@@ -57,7 +57,7 @@ body {
 
 .menu-item {
     float: left;
-    margin-left: 2em;
+    margin-left: 4.8em;
     list-style: none;
 /*
     width: 125px;
@@ -129,6 +129,7 @@ hr { width: 60%; }
 }
 #sidebar-right{ 
     float:right;
+    text-align: left;
 }
 .widget-side-right{ 
     background-color: #FFF;
