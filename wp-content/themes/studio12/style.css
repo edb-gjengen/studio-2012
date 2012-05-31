@@ -181,12 +181,12 @@ hr { width: 60%; }
 .widget .artist :hover {
     text-decoration: underline;
 }
-.widget .str1 a { font-size: 18px;}
-.widget .str2 a { font-size: 22px; }
-.widget .str3 a { font-size: 26px; }
-.widget .str4 a { font-size: 30px; }
-.widget .str5 a { font-size: 34px; }
-.widget .str6 a { font-size: 38px; }
+.widget .str1 a { font-size: 16px;}
+.widget .str2 a { font-size: 20px; }
+.widget .str3 a { font-size: 24px; }
+.widget .str4 a { font-size: 28px; }
+.widget .str5 a { font-size: 32px; }
+.widget .str6 a { font-size: 36px; }
 .widget .blueart a   { color: rgb(0, 186, 192)  ; }
 .widget .redart a    { color: rgb(228, 44, 122) ; }
 .widget .greenart a  { color: rgb(14, 174, 91)  ; }
@@ -278,6 +278,7 @@ input#saveForm {
 	width: 4em;
 	background-color: #e4156f;
 	font-family: 'Lobster', cursive;
+	text-align: center;
 }
 
 #frivilligknapp {
