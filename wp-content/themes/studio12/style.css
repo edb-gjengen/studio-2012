@@ -169,7 +169,7 @@ hr { width: 60%; }
 .widget .artist {
     display: block;
     text-align: left;
-    margin-left: 0.5em;
+    margin-left: 1em;
     line-height: 20px;
 }
  
