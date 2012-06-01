@@ -276,14 +276,18 @@ hr { width: 60%; }
 	overflow: hidden;
 }
 input#saveForm {
-	font-size: 1.3em;
-	height: 2em;
-	width: 4em;
-	background-color: #e4156f;
-	font-family: 'Lobster', cursive;
-	text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000000;
+    font-size: 1.3em;
+    height: 2em;
+    width: 4em;
+    background-color: #e4156f;
+    font-family: 'Lobster', cursive;
+    text-align: center;
 }
-
+input#saveForm:hover {
+    background-color: #f57ec5;
+}
 #frivilligknapp {
 	width: 240px;
 }
