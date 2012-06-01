@@ -215,8 +215,8 @@ hr { width: 60%; }
 
 .entry h2 {
     font-weight: bold;
-    font-family: Oswald sans-serif;
-
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
 }
 
 .post h2 {
