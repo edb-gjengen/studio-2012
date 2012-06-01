@@ -213,8 +213,8 @@ hr { width: 60%; }
     font-size: 0.9em;
 }
 
-#main-content .entry {
-
+.entry h2 {
+    font-family: Oswald sans-serif;
 }
 
 .post h2 {
