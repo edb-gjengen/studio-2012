@@ -5,15 +5,12 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div id="main-content">
 <article <?php post_class("event") ?> id="post-<?php the_ID(); ?>">
-   
    <div class="entry">
-
       <?php 
    $event = get_post_meta($post->ID, 'studio_artist_event', true);
    if (has_post_thumbnail())
      echo the_post_thumbnail("singlepost"); ?>
    <h2><?php the_title(); ?></h2>
-<?php echo "Arrangementet kan du finne <a href='".get_post($event)->guid."'>her</a>"; ?>
 
 <?php the_content(); ?>
    
