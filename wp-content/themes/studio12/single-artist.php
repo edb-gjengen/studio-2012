@@ -9,7 +9,7 @@
    <div class="entry">
 
       <?php 
-
+   $event = get_post_meta($post->ID, 'studio_artist_event', true);
    if (has_post_thumbnail())
      echo the_post_thumbnail("singlepost"); ?>
    <h2><?php the_title(); ?></h2>

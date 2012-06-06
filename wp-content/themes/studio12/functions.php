@@ -82,8 +82,8 @@ class Artist_Widget extends WP_Widget {
 	// event-lenka
 	$event = get_post_meta($post->ID, 'studio_artist_event', true);
 	// ekstern lenke for artisten
-	//echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_font', true).' '.get_post_meta($post->ID, 'studio_artist_color', true)."\"><a href=\"" . get_permalink() . "\">" . get_the_title() . '</a></p>';
-	echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_font', true).' '.get_post_meta($post->ID, 'studio_artist_color', true)."\"><a href=\"" . get_post($event)->guid . "\">" . get_the_title() . '</a></p>';
+	echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_font', true).' '.get_post_meta($post->ID, 'studio_artist_color', true)."\"><a href=\"" . get_permalink() . "\">" . get_the_title() . '</a></p>';
+	//echo '<p class="artist '.get_post_meta($post->ID, 'studio_artist_font', true).' '.get_post_meta($post->ID, 'studio_artist_color', true)."\"><a href=\"" . get_post($event)->guid . "\">" . get_the_title() . '</a></p>';
       }
     }
     echo $args['after_widget'];
