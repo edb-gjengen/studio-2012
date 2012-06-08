@@ -5,7 +5,7 @@
 
 </div>
    <div class="countdown" style="margin-top: 1em;">
-   <h2><a href="<?php echo get_page_by_title('DNS')->guid; ?>">Bli medlem</a></h2>
+   <h2><a href="<?php echo get_page_by_title('Det Norske Studentersamfund')->guid; ?>">Bli medlem</a></h2>
 
 </div>
 
