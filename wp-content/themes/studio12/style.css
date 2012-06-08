@@ -138,12 +138,20 @@ hr { width: 60%; }
     background-color: #FFF;
 }
 
-#countdown {
+.countdown {
     height: 3.5em;
     width: 100%;
     background-color: rgb(14, 174, 91); 
 }
-#countdown h2 {
+
+.countdown h2 {
+    color: #FFF;
+    text-shadow: 1px 2px #000;
+    margin: 0;
+    text-align: center;
+
+}
+.countdown a {
     color: #FFF;
     text-shadow: 1px 2px #000;
     margin: 0;

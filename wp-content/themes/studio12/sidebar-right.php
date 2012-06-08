@@ -1,7 +1,11 @@
 <div id="sidebar-right" class="sidebar">
 
-   <div id="countdown">
+   <div class="countdown">
    <h2><?php echo (int)(((mktime (0,0,0,8,13,2012) - time())/3600)/24); ?> dager igjen! </h2>
+
+</div>
+   <div class="countdown" style="margin-top: 1em;">
+   <h2><a href="<?php echo get_page_by_title('DNS')->guid; ?>">Bli medlem</a></h2>
 
 </div>
 
