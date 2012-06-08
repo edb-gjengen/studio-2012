@@ -139,7 +139,7 @@ hr { width: 60%; }
 }
 
 .countdown {
-    height: 3.5em;
+    padding-bottom: 8px;
     width: 100%;
     background-color: rgb(14, 174, 91); 
 }
