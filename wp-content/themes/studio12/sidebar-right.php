@@ -5,7 +5,7 @@
 
 </div>
    <div class="countdown" style="margin-top: 1em;">
-   <h2><a href="<?php echo get_page_by_title('Det Norske Studentersamfund')->guid; ?>">Det Norske Studentersamfund</a></h2>
+   <h2><a href="<?php echo get_permalink(get_page_by_title('Det Norske Studentersamfund')->ID); ?>">Det Norske Studentersamfund</a></h2>
 
 </div>
 
