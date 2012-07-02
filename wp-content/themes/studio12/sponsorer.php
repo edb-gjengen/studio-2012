@@ -13,6 +13,9 @@ $args=array(
 	    'post_status' => 'publish',
 	    'paged' => $paged,
 	    'ignore_sticky_posts'=> 1
+	    'meta_key' => 'dagen_bedrift_type',
+	    'orderby' => 'meta_value',
+	    'order' => 'ASC'
 	    );
 $temp = $wp_query;  // assign orginal query to temp variable for later use   
 $wp_query = null;

@@ -57,7 +57,7 @@ body {
 
 .menu-item {
     float: left;
-    margin-left: 2.8em;
+    margin-left: 2.5em;
     list-style: none;
 /*
     width: 125px;
@@ -71,8 +71,7 @@ body {
     color: #FFF;
     line-height: 40px;
     font-family: 'Lobster', cursive;
-    font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.5em;
     padding: 0 1em 0 1em;
 }
 .menu-item a:hover {
@@ -122,7 +121,9 @@ hr { width: 60%; }
     width: 20%;
     margin: 1em 0em 0 0;
 }
-
+.sidebar h2 {
+    margin: 0;
+}
 #sidebar-left{ 
     float:left;
 }
@@ -145,6 +146,8 @@ hr { width: 60%; }
 }
 
 .countdown h2 {
+    font-weight: normal;
+    font-size: 1.7em;
     color: #FFF;
     text-shadow: 1px 2px #000;
     margin: 0;
@@ -183,18 +186,17 @@ hr { width: 60%; }
  
 .widget .artist a {
     font-family: 'Lobster', cursive;
-
     text-decoration: none;
 }
 .widget .artist :hover {
     text-decoration: underline;
 }
-.widget .str1 a { font-size: 16px;}
-.widget .str2 a { font-size: 19px; }
-.widget .str3 a { font-size: 22px; }
-.widget .str4 a { font-size: 25px; }
-.widget .str5 a { font-size: 28px; }
-.widget .str6 a { font-size: 31px; }
+.widget .str1 a { font-size: 18px;}
+.widget .str2 a { font-size: 21px; }
+.widget .str3 a { font-size: 24px; }
+.widget .str4 a { font-size: 27px; }
+.widget .str5 a { font-size: 30px; }
+.widget .str6 a { font-size: 33px; }
 .widget .blueart a   { color: rgb(0, 186, 192)  ; }
 .widget .redart a    { color: rgb(228, 44, 122) ; }
 .widget .greenart a  { color: rgb(14, 174, 91)  ; }
@@ -354,4 +356,15 @@ tbody .Foredrag, tbody .Lyntale {  /* lysest Blå */
 }
 tbody .Foredrag:hover, tbody .Lyntale:hover { background-color: #ade3d4; } /* lys blå */
 
-
+#programNavbar {
+    margin-left: -2.5em;
+    height: 4em;
+}
+.programNavbarTab {
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.5em;
+    list-style-position: inside;
+}
+.dateColor { color: #33a39e; }

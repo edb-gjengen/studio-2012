@@ -252,6 +252,23 @@ if (!class_exists("NeufEvents")) {
 				      ) 
 				);
 	$html = '';
+
+	$html .= '<ul id="programNavbar">';
+	$html .= '   <li class="programNavbarTab">MAN <span class="dateColor">13.08</span></li>';
+	$html .= '   <li class="programNavbarTab">TIRS <span class="dateColor">14.08</span></li>';
+	$html .= '   <li class="programNavbarTab">ONS <span class="dateColor">15.08</span></li>';
+	$html .= '   <li class="programNavbarTab">TORS <span class="dateColor">16.08</span></li>';
+	$html .= '   <li class="programNavbarTab">FRE <span class="dateColor">17.08</span></li>';
+	$html .= '   <li class="programNavbarTab">LØR <span class="dateColor">18.08</span></li>';
+	$html .= '   <li class="programNavbarTab">SØN <span class="dateColor">19.08</span></li>';
+	$html .= '   <li class="programNavbarTab">MAN <span class="dateColor">20.08</span></li>';
+	$html .= '   <li class="programNavbarTab">TIRS <span class="dateColor">21.08</span></li>';
+	$html .= '   <li class="programNavbarTab">ONS <span class="dateColor">22.08</span></li>';
+	$html .= '   <li class="programNavbarTab">TORS <span class="dateColor">23.08</span></li>';
+	$html .= '   <li class="programNavbarTab">FRE <span class="dateColor">24.08</span></li>';
+	$html .= '   <li class="programNavbarTab">LØR <span class="dateColor">25.08</span></li>';
+	$html .= '   <li class="programNavbarTab">SØN <span class="dateColor">26.08</span></li>';
+	$html .= '</ul><hr />';
 	
 	if ( $events->have_posts() ) :
 	  $date = "";

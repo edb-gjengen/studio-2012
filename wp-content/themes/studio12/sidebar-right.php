@@ -1,14 +1,5 @@
 <div id="sidebar-right" class="sidebar">
 
-   <div class="countdown">
-   <h2><?php echo (int)(((mktime (0,0,0,8,13,2012) - time())/3600)/24); ?> dager igjen! </h2>
-
-</div>
-   <div class="countdown" style="margin-top: 1em;">
-   <h2><a href="<?php echo get_permalink(get_page_by_title('Det Norske Studentersamfund')->ID); ?>">Det Norske Studentersamfund</a></h2>
-
-</div>
-
    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets2')) : else : ?>
     
         <!-- All this stuff in here only shows up if you DON\'T have any widgets active in this zone -->
