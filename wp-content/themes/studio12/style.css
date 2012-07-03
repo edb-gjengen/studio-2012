@@ -73,9 +73,17 @@ body {
     font-family: 'Lobster', cursive;
     font-size: 1.5em;
     padding: 0 1em 0 1em;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 .menu-item a:hover {
     background-color: #f57ec5;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 article {
@@ -299,7 +307,7 @@ input#saveForm:hover {
     background-color: #f57ec5;
 }
 #frivilligknapp {
-	width: 240px;
+    width: 240px;
 }
 
 #blimed_tilbake_ok p {
@@ -309,7 +317,6 @@ input#saveForm:hover {
     font-size: 20px;
     font-weight: bold;
 }
-
 
 #blimed_tilbake_fail p {
     background-color: red;
@@ -324,47 +331,83 @@ input#saveForm:hover {
 }
 
 .event-table {
+    font-family: 'Oswald', arial;
     border-spacing: 0;
     border-width: 0;
 }
-
+.eventnewday {
+    font-family: 'Oswald', arial;
+    font-size: 1.6em;
+}
 .tr_event{
-    height: 3em;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 2em;
+    -moz-transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+}
+.tr_event:hover {
+    background-color: #CCC;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 .tr_event td {
     cursor: pointer;
-    padding: 0.8em;
 }
 
-tbody .Quiz, tbody .Klubb, tbody .Konkurranse {  /* Lysest grønn */
+tbody .Quiz,
+tbody .Klubb, 
+tbody .Konkurranse {  /* Lysest grønn */
     color: #237640;
-    
 }
-tbody .Quiz:hover, tbody .Klubb:hover, tbody .Konkurranse:hover { background-color: #a4dd9c; } /* lys grønn */
 tbody .Konsert {  /* Lysest rosa */
     color: #a11277;
 }
-tbody .Konsert:hover { background-color: #f57ec5; } /* Lys rosa */
-tbody .Annet, tbody .Stand-up {  /* Lysest lilla */
+tbody .Annet, 
+tbody .Stand-up {  /* Lysest lilla */
     color: #3a2c7b;
-    
 }
-tbody .Annet:hover, tbody Stand-up:hover { background-color: #b6a4c9; }  /* lys lilla */
-tbody .Foredrag, tbody .Lyntale {  /* lysest Blå */
+
+tbody .Foredrag,
+tbody .Lyntale {  /* lysest Blå */
     color: #33a39e;
-    
 }
-tbody .Foredrag:hover, tbody .Lyntale:hover { background-color: #ade3d4; } /* lys blå */
+
+
 
 #programNavbar {
-    margin-left: -2.5em;
-    height: 4em;
+    list-style: none;
+    margin-left: -2em;
+    height: 6.5em;
 }
 .programNavbarTab {
-    font-family: Oswald, sans-serif;
-    font-weight: bold;
+    width: 4.3em;
     float: left;
     margin-right: 0.5em;
     list-style-position: inside;
 }
 .dateColor { color: #33a39e; }
+button{
+    border: none;
+    font-family: Oswald, sans-serif;
+    font-weight: bold;
+    background: none;
+    margin-top: 3px;
+    border: 3px solid transparent;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+button:hover {
+    cursor: pointer;
+    border: 3px solid #33a39e;;
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}

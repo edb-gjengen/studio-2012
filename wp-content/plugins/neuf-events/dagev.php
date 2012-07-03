@@ -243,6 +243,11 @@ if (!class_exists("NeufEvents")) {
       function neuf_events_program() {
 	global $post, $wp_locale;
 	
+	$deys = array('MANDAG 13.08.2012', 'TIRSDAG 14.08.2012', 'ONSDAG 15.08.2012', 
+		      'TORSDAG 16.08.2012', 'FREDAG 17.08.2012', 'LØRDAG 18.08.2012', 'SØNDAG 19.08.2012',
+		      'MANDAG 20.08.2012', 'TIRSDAG 21.08.2012', 'ONSDAG 22.08.2012', 
+		      'TORSDAG 23.08.2012', 'FREDAG 24.08.2012', 'LØRDAG 25.08.2012', 'SØNDAG 16.08.2012');
+
 	$events = new WP_Query( array(
 				      'post_type' => 'event',
 				      'posts_per_page' => -1,
@@ -252,51 +257,54 @@ if (!class_exists("NeufEvents")) {
 				      ) 
 				);
 	$html = '';
-
+	$html .= '<form id="thisdate" action="" method="post">';
 	$html .= '<ul id="programNavbar">';
-	$html .= '   <li class="programNavbarTab">MAN <span class="dateColor">13.08</span></li>';
-	$html .= '   <li class="programNavbarTab">TIRS <span class="dateColor">14.08</span></li>';
-	$html .= '   <li class="programNavbarTab">ONS <span class="dateColor">15.08</span></li>';
-	$html .= '   <li class="programNavbarTab">TORS <span class="dateColor">16.08</span></li>';
-	$html .= '   <li class="programNavbarTab">FRE <span class="dateColor">17.08</span></li>';
-	$html .= '   <li class="programNavbarTab">LØR <span class="dateColor">18.08</span></li>';
-	$html .= '   <li class="programNavbarTab">SØN <span class="dateColor">19.08</span></li>';
-	$html .= '   <li class="programNavbarTab">MAN <span class="dateColor">20.08</span></li>';
-	$html .= '   <li class="programNavbarTab">TIRS <span class="dateColor">21.08</span></li>';
-	$html .= '   <li class="programNavbarTab">ONS <span class="dateColor">22.08</span></li>';
-	$html .= '   <li class="programNavbarTab">TORS <span class="dateColor">23.08</span></li>';
-	$html .= '   <li class="programNavbarTab">FRE <span class="dateColor">24.08</span></li>';
-	$html .= '   <li class="programNavbarTab">LØR <span class="dateColor">25.08</span></li>';
-	$html .= '   <li class="programNavbarTab">SØN <span class="dateColor">26.08</span></li>';
-	$html .= '</ul><hr />';
-	
-	if ( $events->have_posts() ) :
-	  $date = "";
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="13" name="date">MAN <span class="dateColor">13.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="14" name="date">TIRS <span class="dateColor">14.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="15" name="date">ONS <span class="dateColor">15.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="16" name="date">TORS <span class="dateColor">16.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="17" name="date">FRE <span class="dateColor">17.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="18" name="date">LØR <span class="dateColor">18.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="19" name="date">SØN <span class="dateColor">19.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="20" name="date">MAN <span class="dateColor">20.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="21" name="date">TIRS <span class="dateColor">21.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="22" name="date">ONS <span class="dateColor">22.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="23" name="date">TORS <span class="dateColor">23.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="24" name="date">FRE <span class="dateColor">24.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="25" name="date">LØR <span class="dateColor">25.08</span></button></li>';
+	$html .= '   <li class="programNavbarTab"><button type="submit" value="26" name="date">SØN <span class="dateColor">26.08</span></button></li>';
+	$html .= '</ul></form><hr />';
 
-	$html .= '<table class="event-table">';
-	
-	while ( $events->have_posts() ) :
-	  $events->the_post();
-	
-	$time = get_post_meta( $post->ID, 'neuf_events_starttime',  true) ;
-	if (date("Y", $time) == date("Y", time())) {
-	    
-	  $venue = get_post_meta( $post->ID, 'neuf_events_venue',  true );
-	  $type  = get_post_meta( $post->ID, 'neuf_events_type',   true);
-	  $artist = get_post_meta( $post->ID, 'neuf_events_artist',  true) ;
+	if ( $events->have_posts() ) {
+	  $date = 13;
+	  $bol = true;
+	  $html .= '<table class="event-table">';
 	  
+	  while ( $events->have_posts() ) :
+	    $events->the_post();
 	  
-	  $html .= '    <tr class="tr_event '.$type.'" onclick="document.location = \''.get_permalink().'\';">';
- 	  $html .= '        <td class="time"  style="font-size:smaller; width:10%;">' . date("d/m H:i", $time) . '</td>';
-	  $html .= '        <td class="title" style="padding-right:10px;">' . get_the_title() . '</td>';
-	  $html .= '        <td class="type" style="font-size:smaller;">' . $type . '</td>';
-	  $html .= '        <td class="place" style="width:10%;padding-left:5px;">' . get_the_title($venue) . '</td>';
-	  $html .= '    </tr>';
-	} 
-	endwhile;
-	
-	$html .= '</table><!-- .event-table -->';
-	endif;
+	  $time = get_post_meta( $post->ID, 'neuf_events_starttime',  true) ;
+	  if (date("Y", $time) == date("Y", time()) && (!isset($_POST['date']) || $_POST['date'] == date("d", $time))) {
+	    $venue = get_post_meta( $post->ID, 'neuf_events_venue',  true );
+	    $type  = get_post_meta( $post->ID, 'neuf_events_type',   true);
+	    $artist = get_post_meta( $post->ID, 'neuf_events_artist',  true) ;
+	    if(!isset($_POST['date']) && $date == intval(date("d", $time))){
+	      $html .= '    <tr class="eventnewday"><td>'.$deys[$date - 13].'</td></tr>'; $date++;
+	    }
+	    if(isset($_POST['date']) && $bol){
+	      $html .= '    <tr class="eventnewday"><td>'.$deys[intval($_POST['date']) - 13].'</td></tr>';
+	      $bol = false;
+	    }
+	    $html .= '    <tr class="tr_event" onclick="document.location = \''.get_permalink().'\';">';
+	    $html .= '        <td class="title '.$type.'" style="padding-left: 4em; padding-right:2em; text-align:right;">' . get_the_title() . '</td>';
+	    $html .= '        <td class="time"  style="width:10%; text-align: left;">' . date("H:i", $time) . '</td>';
+	    $html .= '        <td class="place" style="width:25%; text-align: left; color: #666;">' . get_the_title($venue) . '</td>';
+	    $html .= '    </tr>';
+	  } 
+	  endwhile;
+	  
+	  $html .= '</table><!-- .event-table -->';
+	}
 	
 	return $html;
 
