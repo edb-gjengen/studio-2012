@@ -340,8 +340,7 @@ input#saveForm:hover {
     font-size: 1.6em;
 }
 .tr_event{
-    font-size: 0.9em;
-    font-weight: bold;
+    font-size: 1em;
     height: 2em;
     -moz-transition: all 1s ease-in;
     -webkit-transition: all 1s ease-in;
