@@ -288,8 +288,8 @@ if (!class_exists("NeufEvents")) {
 	    $venue = get_post_meta( $post->ID, 'neuf_events_venue',  true );
 	    $type  = get_post_meta( $post->ID, 'neuf_events_type',   true);
 	    $artist = get_post_meta( $post->ID, 'neuf_events_artist',  true) ;
-	    if(!isset($_POST['date']) && $date == intval(date("d", $time))){
-	      $html .= '    <tr class="eventnewday"><td>'.$deys[$date - 13].'</td></tr>'; $date++;
+	    if(!isset($_POST['date']) && $date != intval(date("d", $time))){
+	      $html .= '    <tr class="eventnewday"><td>'.$deys[$date - 13].'</td></tr>'; $date = intval(date("d", $time));
 	    }
 	    if(isset($_POST['date']) && $bol){
 	      $html .= '    <tr class="eventnewday"><td>'.$deys[intval($_POST['date']) - 13].'</td></tr>';
