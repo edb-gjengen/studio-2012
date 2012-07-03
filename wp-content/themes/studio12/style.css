@@ -79,6 +79,7 @@ body {
     transition: all 0.5s ease-in;
 }
 .menu-item a:hover {
+    text-shadow: 0 0 #000000;
     background-color: #f57ec5;
     -moz-transition: all 0.5s ease-in;
     -webkit-transition: all 0.5s ease-in;
@@ -146,6 +147,9 @@ hr { width: 60%; }
 .widget-side-right{ 
     background-color: #FFF;
 }
+.widget_artist_widget {
+    background-color: #000;
+}
 
 .countdown {
     padding-bottom: 8px;
@@ -186,6 +190,7 @@ hr { width: 60%; }
 }
 
 .widget .artist {
+
     display: block;
     text-align: left;
     margin-left: 1em;
@@ -193,7 +198,7 @@ hr { width: 60%; }
 }
  
 .widget .artist a {
-    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', cursive;
     text-decoration: none;
 }
 .widget .artist :hover {
@@ -409,4 +414,8 @@ button:hover {
     -webkit-transition: all 0.5s ease-in;
     -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
+}
+
+.twitter-share-button {
+    margin-right: 1em;
 }
