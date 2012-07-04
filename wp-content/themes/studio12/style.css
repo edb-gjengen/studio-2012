@@ -202,11 +202,11 @@ hr { width: 60%; }
 }
 
 .widget .str1 a { font-size: 20px;}
-.widget .str2 a { font-size: 25px; }
-.widget .str3 a { font-size: 30px; }
-.widget .str4 a { font-size: 35px; }
-.widget .str5 a { font-size: 40px; }
-.widget .str6 a { font-size: 45px; }
+.widget .str2 a { font-size: 24px; }
+.widget .str3 a { font-size: 28px; }
+.widget .str4 a { font-size: 32px; }
+.widget .str5 a { font-size: 36px; }
+.widget .str6 a { font-size: 40px; }
 .widget .blueart a   { color: rgb(0, 186, 192)  ; }
 .widget .redart a    { color: rgb(228, 44, 122) ; }
 .widget .greenart a  { color: rgb(14, 174, 91)  ; }
