@@ -1,4 +1,7 @@
 <div id="sidebar-right" class="sidebar">
+   <div class="countdown">
+      <h2><a href="<?php echo get_permalink(get_page_by_title('English')->ID); ?>">English</a></h2>
+   </div>
 
    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets2')) : else : ?>
     

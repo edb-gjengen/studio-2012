@@ -152,7 +152,7 @@ hr { width: 60%; }
 }
 
 .countdown {
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     width: 100%;
     background-color: rgb(14, 174, 91); 
 }
@@ -238,12 +238,12 @@ hr { width: 60%; }
     font-size: 0.9em;
 }
 
-.firstpostindex .entry {
+.home .firstpostindex .entry {
     margin-left: 1em;
     width: 40em;
 }
 
-.entry { 
+.home .entry { 
     position: absolute;
     margin-left: 14em;
     width: 24em;
