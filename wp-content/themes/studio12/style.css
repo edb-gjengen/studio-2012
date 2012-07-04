@@ -149,7 +149,6 @@ hr { width: 60%; }
 }
 .widget_artist_widget {
     background-color: #000;
-    padding: 0;
 }
 
 .countdown {
@@ -194,7 +193,6 @@ hr { width: 60%; }
     display: block;
     text-align: left;
     text-transform: uppercase;
-    margin-left: 1em;
     line-height: 30px;
 }
  
