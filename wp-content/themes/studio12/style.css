@@ -265,8 +265,8 @@ hr { width: 60%; }
 }
 
 .home .firstpostindex .entry {
-    margin-left: 1em;
-    width: 40em;
+    margin-left: 0;
+    width: 37em;
 }
 
 .home .entry { 
