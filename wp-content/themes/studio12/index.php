@@ -9,35 +9,41 @@ $c++; ?>
 
 <?php if($c == 1) : ?>
 <article <?php post_class("firstpostindex") ?> id="post-<?php the_ID(); ?>">
-<div>
+<div style="height: 350px;">
   <?php the_post_thumbnail('firstpost'); ?>
-   <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-
-   <div class="entry">
-     <?php the_excerpt(); ?>
-   </div>
-
+  <div class="social">
   <a href="<?php the_permalink() ?>">
   <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /></a>
   <div class="fb-like lesmer" data-href="<?php the_permalink() ?>" data-send="false" data-layout="button_count" data-width="40" data-show-faces="false"></div>
 <a href="https://twitter.com/share" class="twitter-share-button lesmer" data-url="<?php the_permalink() ?>" data-count="none" data-hashtags="STUDiO2012">Tweet</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+
+
+   <div class="entry">
+     <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+     <?php the_excerpt(); ?>
+   </div>
+
 </div>
        <hr style="margin-top: 3em;" />
 </article>
        <?php else : ?>
 <article <?php post_class("regular") ?> id="post-<?php the_ID(); ?>">
 <div style="height: 210px;">
-       <?php the_post_thumbnail('restpost'); ?>
-   <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-   <div class="entry">
-     <?php the_excerpt(); ?>
-   </div>
+<div class="social">
   <a href="<?php the_permalink() ?>">
   <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /></a>
   <div class="fb-like lesmer" data-href="<?php the_permalink() ?>" data-send="false" data-layout="button_count" data-width="40" data-show-faces="false"></div>
 <a href="https://twitter.com/share" class="twitter-share-button lesmer" data-url="<?php the_permalink() ?>" data-count="none" data-hashtags="STUDiO2012">Tweet</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+       <?php the_post_thumbnail('restpost'); ?>
+   <div class="entry">
+   <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
+     <?php the_excerpt(); ?>
+   </div>
 </div>
        <hr />
 </article>

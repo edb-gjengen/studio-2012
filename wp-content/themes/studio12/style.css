@@ -231,12 +231,23 @@ hr { width: 60%; }
     margin-top: 1em;
     width: 100%;
     color: #e4156f;
+    border: solid 1px;
 }
 
 #main-content p {
     font-size: 0.9em;
 }
 
+.firstpostindex .entry {
+    margin-left: 1em;
+    width: 40em;
+}
+
+.entry { 
+    position: absolute;
+    margin-left: 14em;
+    width: 24em;
+}
 .entry h2 {
     font-weight: bold;
     font-family: Oswald, sans-serif;
@@ -418,4 +429,11 @@ button:hover {
 
 .twitter-share-button {
     margin-right: 1em;
+}
+.social {
+    float: right;
+    margin-top: 190px;
+}
+.firstpostindex .social {
+    margin-top: 110px;
 }
