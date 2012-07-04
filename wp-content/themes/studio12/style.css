@@ -190,26 +190,24 @@ hr { width: 60%; }
 }
 
 .widget .artist {
-
     display: block;
     text-align: left;
+    text-transform: uppercase;
     margin-left: 1em;
-    line-height: 20px;
+    line-height: 30px;
 }
  
 .widget .artist a {
     font-family: 'Oswald', cursive;
     text-decoration: none;
 }
-.widget .artist :hover {
-    text-decoration: underline;
-}
-.widget .str1 a { font-size: 18px;}
-.widget .str2 a { font-size: 21px; }
-.widget .str3 a { font-size: 24px; }
-.widget .str4 a { font-size: 27px; }
-.widget .str5 a { font-size: 30px; }
-.widget .str6 a { font-size: 33px; }
+
+.widget .str1 a { font-size: 20px;}
+.widget .str2 a { font-size: 25px; }
+.widget .str3 a { font-size: 30px; }
+.widget .str4 a { font-size: 35px; }
+.widget .str5 a { font-size: 40px; }
+.widget .str6 a { font-size: 45px; }
 .widget .blueart a   { color: rgb(0, 186, 192)  ; }
 .widget .redart a    { color: rgb(228, 44, 122) ; }
 .widget .greenart a  { color: rgb(14, 174, 91)  ; }
