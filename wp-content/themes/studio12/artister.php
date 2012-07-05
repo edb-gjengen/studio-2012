@@ -20,6 +20,7 @@ $wp_query = new WP_Query($args);
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php get_template_part( 'loop', 'index' );?>
 <article <?php post_class("regular") ?> id="post-<?php the_ID(); ?>">
 <div style="height: 210px;">
 <div class="social">
@@ -48,4 +49,5 @@ $wp_query = new WP_Query($args);
 	<?php endif; ?>
 
   </div>
+<?php get_template_part( 'loop', 'index' );?>
    <?php get_footer(); ?>
