@@ -261,6 +261,7 @@ hr { width: 60%; }
 
 .Program .entry {
     margin: 0;
+    position: relative;
     width: 37em;
 }
 
