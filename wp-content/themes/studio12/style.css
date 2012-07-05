@@ -259,13 +259,13 @@ hr { width: 60%; }
     width: 37em;
 }
 
-.Program .entry {
+.entry {
     margin: 0;
     position: relative;
     width: 37em;
 }
 
-.entry { 
+.regular .entry { 
     position: absolute;
     margin-left: 14em;
     width: 24em;
