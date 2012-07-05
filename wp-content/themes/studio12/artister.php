@@ -20,19 +20,21 @@ $wp_query = new WP_Query($args);
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-<?php get_template_part( 'loop', 'index' );?>
-
 <article <?php post_class("regular") ?> id="post-<?php the_ID(); ?>">
 <div style="height: 210px;">
-  
-  <?php if (has_post_thumbnail()) { echo the_post_thumbnail('restpost'); } ?>
-   <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-   <div class="entry">
-     <?php the_excerpt(); ?>
-   </div>
+<div class="social">
   <a href="<?php the_permalink() ?>">
   <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /></a>
+  <div class="fb-like lesmer" data-href="<?php the_permalink() ?>" data-send="false" data-layout="button_count" data-width="40" data-show-faces="false"></div>
+<a href="https://twitter.com/share" class="twitter-share-button lesmer" data-url="<?php the_permalink() ?>" data-count="none" data-hashtags="STUDiO2012">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+       <?php the_post_thumbnail('restpost'); ?>
+   <div class="entry">
+   <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
+     <?php the_excerpt(); ?>
+   </div>
 </div>
        <hr />
 </article>
@@ -46,7 +48,4 @@ $wp_query = new WP_Query($args);
 	<?php endif; ?>
 
   </div>
-  <?php get_template_part( 'loop', 'index' );?>
    <?php get_footer(); ?>
-
-
