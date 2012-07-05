@@ -259,6 +259,12 @@ hr { width: 60%; }
     width: 37em;
 }
 
+.Program .entry {
+    padding: 2em;
+    margin: 0;
+    width: auto;
+}
+
 .entry { 
     position: absolute;
     margin-left: 14em;
