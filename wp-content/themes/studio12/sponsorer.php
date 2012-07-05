@@ -1,7 +1,8 @@
+<?php
 /*
   Template Name: bedrifter
 */
-
+?>
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 <?php get_sidebar("right"); ?>
