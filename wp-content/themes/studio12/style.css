@@ -231,7 +231,7 @@ hr { width: 60%; }
 .widget .greenart a  { color: rgb(14, 174, 91)  ; }
 .widget .purpleart a { color: rgb(98, 60, 151)  ; }
 
-.post, .event {
+.post, .event, artist {
     padding: 1em 2em 0 2em;
 }
 
