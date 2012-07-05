@@ -254,12 +254,12 @@ hr { width: 60%; }
     font-size: 0.9em;
 }
 
-.home .firstpostindex .entry {
+.firstpostindex .entry {
     margin-left: 0;
     width: 37em;
 }
 
-.home .entry { 
+.entry { 
     position: absolute;
     margin-left: 14em;
     width: 24em;
