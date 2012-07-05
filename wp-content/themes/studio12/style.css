@@ -259,7 +259,7 @@ hr { width: 60%; }
     width: 37em;
 }
 
-.home .entry, .artist { 
+.home .entry { 
     position: absolute;
     margin-left: 14em;
     width: 24em;
