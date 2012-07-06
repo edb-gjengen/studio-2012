@@ -9,7 +9,7 @@ $c++; ?>
 
 <?php if($c == 1) : ?>
 <article <?php post_class("firstpostindex") ?> id="post-<?php the_ID(); ?>">
-<div style="height: 350px;">
+<div style="height: 370px;">
   <?php the_post_thumbnail('firstpost'); ?>
   <div class="social">
   <a href="<?php the_permalink() ?>">

@@ -257,6 +257,7 @@ hr { width: 60%; }
 .firstpostindex .entry {
     margin-left: 0;
     width: 37em;
+    position: absolute;
 }
 
 .entry {
@@ -457,5 +458,5 @@ button:hover {
     margin-top: 190px;
 }
 .firstpostindex .social {
-    margin-top: 110px;
+    margin-top: 130px;
 }
