@@ -26,8 +26,14 @@ $c++; ?>
 
 <?php if($c == 1) : ?>
 <article <?php post_class("firstpostindex") ?> id="post-<?php the_ID(); ?>">
-<div style="height: 370px;">
-  <?php the_post_thumbnail('firstpost'); ?>
+  <?php 
+  if(has_post_thumbnail()){ 
+    echo "<div style='height: 370px;'>";
+    the_post_thumbnail('firstpost');
+  } else { 
+    echo "<div style='height: 125px;'>";
+  } 
+  ?>
   <div class="social">
   <a href="<?php the_permalink() ?>">
   <img class="lesmer" src="<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png" alt="Les Mer" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_ned_lesmer.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_opp_lesmer.png'"  /></a>
