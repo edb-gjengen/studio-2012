@@ -460,3 +460,7 @@ button:hover {
 .firstpostindex .social {
     margin-top: 130px;
 }
+
+img {
+    border: none;
+}
