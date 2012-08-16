@@ -5,6 +5,18 @@
 	<img id="frivilligknapp" src="<?php echo get_template_directory_uri(); ?>/images/knapp_frivillig.png" alt="blimed" onmouseover=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_frivillig_mouseover.png'" onmouseout=" this.src='<?php echo get_template_directory_uri(); ?>/images/knapp_frivillig.png'" />
    </a>
    <br />
+
+    <div class="flickr-show" id="flickr">
+        <p>Please enable Javascript to view this slideshow</p>
+    </div>
+
+    <script src="http://www.flickrshow.co.uk/static/scripts/flickrshow-7.2.min.js"></script>
+    <script>
+   var robin = new flickrshow('flickr', {
+     'set':'72157631088130384'
+	 });
+    </script>
+
    <div class="countdown" style="margin-top: 1em;">
    <h2><a href="<?php echo get_permalink(get_page_by_title('Det Norske Studentersamfund')->ID); ?>">Det Norske Studentersamfund</a></h2>
 </div>

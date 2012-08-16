@@ -464,3 +464,8 @@ button:hover {
 img {
     border: none;
 }
+
+.flickr-show {
+    margin-top: 1em;
+    height: 200px;
+}
